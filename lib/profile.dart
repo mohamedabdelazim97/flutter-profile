@@ -3,7 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PrfilePage extends StatefulWidget {
+  const PrfilePage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _PrfilePageState createState() => _PrfilePageState();
 }
 
@@ -103,43 +106,71 @@ class _PrfilePageState extends State<PrfilePage> {
               height: 20,
             ),
             buildAccountOptionRow(
-                context, "Change password", Icons.lock, EditProfilePage()),
-            const Divider(
-              height: 15,
-              thickness: 2,
+              context,
+              "Change password",
+              Icons.lock,
+              const EditProfilePage(),
             ),
-            buildAccountOptionRow(context, "Invite Friend",
-                Icons.person_add_alt, EditProfilePage()),
-            const Divider(
-              height: 15,
-              thickness: 2,
-            ),
-            buildAccountOptionRow(context, "Credit & Coupons",
-                Icons.card_giftcard, EditProfilePage()),
             const Divider(
               height: 15,
               thickness: 2,
             ),
             buildAccountOptionRow(
-                context, "help Center", Icons.question_mark, EditProfilePage()),
+              context,
+              "Invite Friend",
+              Icons.person_add_alt,
+              const EditProfilePage(),
+            ),
             const Divider(
               height: 15,
               thickness: 2,
             ),
             buildAccountOptionRow(
-                context, "Payment", Icons.payment, EditProfilePage()),
+              context,
+              "Credit & Coupons",
+              Icons.card_giftcard,
+              const EditProfilePage(),
+            ),
             const Divider(
               height: 15,
               thickness: 2,
             ),
             buildAccountOptionRow(
-                context, "Setting", Icons.settings, EditProfilePage()),
+              context,
+              "help Center",
+              Icons.question_mark,
+              const EditProfilePage(),
+            ),
             const Divider(
               height: 15,
               thickness: 2,
             ),
             buildAccountOptionRow(
-                context, "Logout", Icons.logout, EditProfilePage()),
+              context,
+              "Payment",
+              Icons.payment,
+              const EditProfilePage(),
+            ),
+            const Divider(
+              height: 15,
+              thickness: 2,
+            ),
+            buildAccountOptionRow(
+              context,
+              "Setting",
+              Icons.settings,
+              const EditProfilePage(),
+            ),
+            const Divider(
+              height: 15,
+              thickness: 2,
+            ),
+            buildAccountOptionRow(
+              context,
+              "Logout",
+              Icons.logout,
+              const EditProfilePage(),
+            ),
           ],
         ),
       ),

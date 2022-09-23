@@ -1,7 +1,12 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class EditProfilePage extends StatefulWidget {
+  const EditProfilePage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _EditProfilePageState createState() => _EditProfilePageState();
 }
 
@@ -11,8 +16,11 @@ class _EditProfilePageState extends State<EditProfilePage> {
   final confirmPasswordController = TextEditingController();
 
   saveChangePassword() {
+    // ignore: avoid_print
     print(oldPasswordController.text);
+    // ignore: avoid_print
     print(passwordController.text);
+    // ignore: avoid_print
     print(confirmPasswordController.text);
     return true;
   }
